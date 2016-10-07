@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.huake.huakemedia.view.XListView
+        android:id="@+id/videopager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </com.huake.huakemedia.view.XListView>
+
+    <ProgressBar
+        android:id="@+id/net_videopager_pb_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/net_videopager_tv_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="没有发现视频"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

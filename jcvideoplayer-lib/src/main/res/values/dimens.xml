@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- MEDIA CONTROLLER -->
+    <dimen name="media_controller_view_height">40.0dip</dimen>
+</resources>

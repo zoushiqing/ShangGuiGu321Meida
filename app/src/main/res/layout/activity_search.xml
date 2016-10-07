@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huake.huakemedia.activity.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff3097fd"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        >
+        <EditText
+            android:id="@+id/activity_search_et_input"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="全网搜索"
+            android:textColorHint="@drawable/tv_search_textcolor_selector"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/tv_search_drawable_selector"
+            android:background="@drawable/tv_search_bg_selector"
+            android:drawablePadding="3dp"
+            />
+        <ImageView
+            android:paddingLeft="8dp"
+            android:id="@+id/activity_search_img_xunfei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voice_empty"
+            />
+        <TextView
+            android:id="@+id/activity_search_tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="搜索"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/activity_search_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/activity_search_progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/activity_search_tvinfo"
+            android:text="抱歉没有您要的内容..."
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

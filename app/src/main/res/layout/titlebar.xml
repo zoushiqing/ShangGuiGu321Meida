@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="55dp"
+android:background="#ff3097fd"
+android:gravity="center_vertical"
+    >
+<com.huake.huakemedia.view.TitleBar
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#ff3097fd"
+    android:gravity="center_vertical"
+    >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_topbanner_logo"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/titlebar_tv_search"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全网搜索"
+        android:textSize="14sp"
+        android:textColor="@drawable/tv_search_textcolor_selector"
+        android:drawableLeft="@drawable/tv_search_drawable_selector"
+        android:background="@drawable/tv_search_bg_selector"
+        android:drawablePadding="3dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="8dp"
+        android:id="@+id/titlebar_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/titlebar_img_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_topbanner_game"
+            />
+        <ImageView
+            android:id="@+id/titlebar_img_dot"
+            android:layout_alignRight="@id/titlebar_img_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dot"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/titlebar_img_recorod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_topbanner_record"
+        android:layout_marginLeft="8dp"
+        />
+</com.huake.huakemedia.view.TitleBar>
+</RelativeLayout>

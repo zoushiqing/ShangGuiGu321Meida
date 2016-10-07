@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get请求" />
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post请求" />
+    <Button
+        android:id="@+id/btn_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="json请求" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示请求数据" />
+    <market.huake.com.testok.ProgressButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:id="@+id/progressButton"
+        />
+    <market.huake.com.testok.ProgressButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开源库下载"
+        android:textColor="@android:color/black"
+        android:id="@+id/progressButton1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆形按钮"
+        android:id="@+id/bt_circle"
+        />
+    <market.huake.com.testok.CircleProgressView
+        android:id="@+id/circle_progress_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </market.huake.com.testok.CircleProgressView>
+
+</LinearLayout>
